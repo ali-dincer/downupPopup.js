@@ -1,7 +1,8 @@
-# downupPopup.js
+# downupPopup.js  [![](https://img.shields.io/badge/ali.dincerx-Follow-blue?style=social&logo=instagram)](https://instagram.com/ali.dincerx)
 
 > Ali Dinçer
-#### [Demo](https://downupPopupjs.dincerali.com/)
+
+#### [Demo](https://downupPopupjs.dincerali.com/) 
 
 ### Usage
 
