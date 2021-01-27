@@ -1,8 +1,9 @@
-#### downupPopup.js
+# downupPopup.js
 
 > Ali Dinçer
 #### [Demo](https://downupPopupjs.dincerali.com/)
-#### Usage
+
+### Usage
 
 * * * * *
 
@@ -34,7 +35,7 @@
 $("#myElement1").downupPopup();
 ```
 
-##### Default Options
+### Default Options
 
 ``` javascript
 $("#myElement1").downupPopup({ 
@@ -50,7 +51,7 @@ $("#myElement1").downupPopup({
 });
 ```
 
-##### Open - Close
+### Open - Close
 
 ``` javascript
 $("#myElement1").downupPopup('open');
@@ -63,7 +64,7 @@ $("#myElement1").downupPopup('close');
 
 * * * * *
 
-##### Open With Button
+### Open With Button
 
 ``` javascript
 $("#btn-1").click(function () { 
@@ -79,7 +80,7 @@ $("#duration-700").downupPopup({
 });
 ```
 
-##### Animation
+### Animation
 
 ``` javascript
 $("#linear").downupPopup({ 
@@ -93,7 +94,7 @@ $("#cubic").downupPopup({
 });
 ```
 
-##### Backgorund
+### Backgorund
 
 ``` javascript
 $("#background").downupPopup({ 
@@ -101,7 +102,7 @@ $("#background").downupPopup({
 });
 ```
 
-##### Radius
+### Radius
 
 ``` javascript
 $("#radius").downupPopup({ 
@@ -110,7 +111,7 @@ $("#radius").downupPopup({
 });
 ```
 
-##### Distance
+### Distance
 
 ``` javascript
 $("#distance0").downupPopup({ 
@@ -124,7 +125,7 @@ $("#distance70").downupPopup({
 });
 ```
 
-##### Header Text / Title
+### Header Text / Title
 
 ``` javascript
 $("#headertext").downupPopup({
@@ -132,7 +133,7 @@ $("#headertext").downupPopup({
 });
 ```
 
-##### Width
+### Width
 
 ``` javascript
 $("#width-90").downupPopup({
@@ -140,7 +141,7 @@ $("#width-90").downupPopup({
 });
 ```
 
-##### Content Scroll
+### Content Scroll
 
 
 ``` javascript
@@ -161,7 +162,7 @@ $("#contentscroll").downupPopup({
 
 * * * * *
 
-#### Responsive and Mobile Performance
+### Responsive and Mobile Performance
 
 * * * * *
 
