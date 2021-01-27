@@ -4,7 +4,7 @@
 
 ### [Demo](https://downupPopupjs.dincerali.com) 
 
-### Usage
+## Usage
 
 * * * * *
 
@@ -61,7 +61,7 @@ $("#myElement1").downupPopup('close');
 
 * * * * *
 
-#### Examples
+## Examples
 
 * * * * *
 
@@ -73,7 +73,7 @@ $("#btn-1").click(function () {
 });
 ```
 
-##### Duration
+### Duration
 
 ``` javascript
 $("#duration-700").downupPopup({
