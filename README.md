@@ -2,7 +2,7 @@
 
 > Ali Dinçer
 
-#### [Demo](https://downupPopupjs.dincerali.com/) 
+### [Demo](https://downupPopupjs.dincerali.com) 
 
 ### Usage
 
