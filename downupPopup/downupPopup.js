@@ -19,7 +19,8 @@
                 distance: 20,
                 headerText: "",
                 width: "100%",
-                contentScroll: false
+                minContentHeight: null,
+                contentScroll: false                
             }, options);
         }
 
