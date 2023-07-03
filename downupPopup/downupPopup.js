@@ -57,16 +57,31 @@
         // Initialization
         if (typeof options === "object" || !options) {
             setTimeout(() => {
-                $this.attr("distance", settings.distance)
-                    .find(".downupPopup-header span").text(settings.headerText);
-                    
                 $this.css('transition', 'transform ' + settings.duration + 'ms ' + settings.animation + '');
                 $this.css('border-radius', '' + settings.radiusLeft + ' ' + settings.radiusRight + ' 0px 0px');
                 $this.css('width', '' + settings.width + '');
-                const hgt = (((100 - settings.distance) - 10) + 3);
+                
+                // setting header height
+                const $head = $this.find(".downupPopup-header");
+                $head.find("span").text(settings.headerText);
+                const headH = 6;
+                $head.css('height', '' + headH + 'vh');
+
+                // calculating dynamic distance by given minContentHeight
+                if (settings.minContentHeight) { 
+                    let calcDistance = Math.round((100 * (window.innerHeight - settings.minContentHeight) / window.innerHeight)) - headH;
+                    settings.distance = Math.max(0, calcDistance);
+                }
+
+                $this.attr('distance', settings.distance);
+
+                // setting distance to top
+                const $cont = $this.find(".downupPopup-content");
+                const contH = 100 - settings.distance - headH;
+                $cont.css('height', '' + contH + 'vh');
+
                 if (settings.contentScroll) {
-                    $this.find(".downupPopup-content").css('height', '' + hgt + 'vh');
-                    $this.find(".downupPopup-content").css('overflow-y', 'scroll');
+                    $cont.css('overflow-y', 'scroll');
                 }
             }, 100);
         }
