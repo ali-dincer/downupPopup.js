@@ -20,7 +20,8 @@
                 headerText: "",
                 width: "100%",
                 minContentHeight: null,
-                contentScroll: false                
+                contentScroll: false,
+                urlHash: null
             }, options);
         }
 
@@ -34,8 +35,14 @@
 
             // unbind ESC
             $(document).off('keyup');
+
+            // remove url hash & unbind BACK button
+            if (settings?.urlHash || $this.attr('hash')) {
+                history.replaceState(null, null, ' ');
+                $(window).off("popstate");
+            }
         }
-        
+
         // Preparation
         if (!$this.hasClass("downupPopup")) {
             $this.addClass("downupPopup")
@@ -63,7 +70,7 @@
         
         // Initialization
         if (typeof options === "object" || !options) {
-            setTimeout(() => {
+            setTimeout(() => {                
                 $this.css('transition', 'transform ' + settings.duration + 'ms ' + settings.animation + '');
                 $this.css('border-radius', '' + settings.radiusLeft + ' ' + settings.radiusRight + ' 0px 0px');
                 $this.css('width', '' + settings.width + '');
@@ -98,11 +105,22 @@
                     }
                 });
 
+                if (settings.urlHash) {
+                    // set url hash & bind BACK button to close
+                    window.location.hash = settings.urlHash;
+                    $(window).on("popstate", function(){
+                        close();
+                    });
+                }
+
+                $this.attr('hash', settings.urlHash);
+    
             }, 100);
         }
 
         // Calling
         if (typeof options !== "object") {
+
             if (options === "open") {
                 $(".downupPopup").addClass("no-act");
                 if ($this.attr("bg") == 1)
@@ -112,6 +130,15 @@
                     .css('transform', 'translate(-50%, ' + $this.attr('distance') + 'vh)');
 
                 $("body").css("overflow", "hidden");
+
+                if($this.attr('hash')) {
+                    // set url hash & bind BACK button to close
+                    window.location.hash = $this.attr('hash');
+                    $(window).on("popstate", function(){
+                        close();
+                    });
+                }
+            
             }
 
             if (options === "close") {
