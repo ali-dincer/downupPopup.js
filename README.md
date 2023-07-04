@@ -48,8 +48,9 @@ $("#myElement1").downupPopup({
  distance: 20, // distance top
  headerText: "", // title, you can use HTML here -> <b>Example</b>
  width: "100%", // width -> 100%, 80%, 200px etc.
- minContentHeight: null, // minimum content height in px if needed (dynamic top)
- contentScroll: false // true, false -> for use, <div class="downupPopup-content"></div> have to inside the element
+ minContentHeight: null, // minimum content height in px if needed (dynamic distance)
+ contentScroll: false, // true, false -> for use, <div class="downupPopup-content"></div> have to inside the element
+ urlHash: null // url hash & BACK button support
 });
 ```
 
@@ -96,7 +97,7 @@ $("#cubic").downupPopup({
 });
 ```
 
-### Backgorund
+### Background
 
 ``` javascript
 $("#background").downupPopup({ 
@@ -127,6 +128,14 @@ $("#distance70").downupPopup({
 });
 ```
 
+### Minimum Content Height (Dynamic Distance)
+
+``` javascript
+$("#mincontent-600").downupPopup({
+ minContentHeight: '600' //in Pixel
+});
+```
+
 ### Header Text / Title
 
 ``` javascript
@@ -145,7 +154,6 @@ $("#width-90").downupPopup({
 
 ### Content Scroll
 
-
 ``` javascript
 $("#contentscroll").downupPopup({
  contentScroll: true 
@@ -156,6 +164,14 @@ $("#contentscroll").downupPopup({
      your HTML elements... 
   </div>
 </div>
+```
+
+### URL Hash and BACK button support
+
+``` javascript
+$("#hash").downupPopup({
+ urlHash: 'dialog-open'
+});
 ```
 
 * * * * *
