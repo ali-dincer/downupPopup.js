@@ -2,7 +2,7 @@
 
 > Ali Dinçer
 
-### [Demo](https://downupPopupjs.dincerali.com) 
+### [Demo](https://downupPopupjs.alidincer.com.tr) 
 
 ## Usage
 
@@ -159,7 +159,7 @@ $("#contentscroll").downupPopup({
 
 * * * * *
 
-#### [Download](https://downupPopupjs.dincerali.com/downupPopupjs.rar)
+#### [Download](http://downupPopupjs.alidincer.com.tr/downupPopupjs.rar)
 
 * * * * *
 
@@ -167,7 +167,7 @@ $("#contentscroll").downupPopup({
 
 * * * * *
 
-![downupPopup](https://downupPopupjs.dincerali.com/mobile.gif)
+![downupPopup](http://downupPopupjs.alidincer.com.tr/mobile.gif)
 
 * * * * *
 
@@ -177,4 +177,4 @@ Dual licensed under the MIT or GPL.
 
 written by Ali Dinçer
 
-[dincerali.com](https://dincerali.com)
+[dincerali.com](http://alidincer.com.tr)
